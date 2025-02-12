@@ -1,37 +1,28 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentine's Surprise</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background-color: #ffe6f2;
-        }
-        h1 {
-            color: #e60073;
-        }
-        p {
-            font-size: 18px;
-        }
-    </style>
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <h1>💖 Surprise! 💖</h1>
-    <p>Hey love! I have something special for you. 😘</p>
-    <p>Click the button below to start! ❤️</p>
-    <button onclick="startSurprise()">Open</button>
 
-    <script>
-        function startSurprise() {
-            alert("Oops! Something went wrong... Just kidding! 😆");
-            setTimeout(() => {
-                window.location.href = "your-google-forms-link-here";
-            }, 3000);
-        }
-    </script>
+    <div id="popup" class="popup">
+        <h1>⚠️ WARNING: VIRUS DETECTED! ⚠️</h1>
+        <p>Your system has been infected! Immediate action required.</p>
+        <button onclick="fakeVirus()">Fix Issue</button>
+    </div>
+
+    <div id="message" class="hidden">
+        <h2>Just kidding! 😆</h2>
+        <p>There's no virus... but there is a question: ❤️</p>
+        <h1>Will You Be My Valentine? 💖</h1>
+        <button onclick="valentineResponse(true)">Yes ❤️</button>
+        <button onclick="valentineResponse(false)">No 💔</button>
+    </div>
+
 </body>
 </html>
