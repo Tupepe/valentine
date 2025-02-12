@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #000;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #222;
+    padding: 20px;
+    border: 3px solid red;
+    border-radius: 10px;
+    box-shadow: 0 0 20px red;
+    text-align: center;
+    width: 300px;
+}
+
+h2 {
+    color: red;
+    animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+    0% { color: yellow; }
+    100% { color: red; }
+}
+
+button {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+}
+
+.hidden {
+    display: none;
+}
+
+#no-btn {
+    position: relative;
+}
